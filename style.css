@@ -1,0 +1,369 @@
+/*  main */
+
+body {
+  margin: 0;
+  font-family: "Arial" sans-serif;
+}
+
+.main {
+  position: relative;
+}
+
+.main img.background {
+  width: 100%;
+}
+
+.main .header {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: 20%;
+  width: 60%;
+  justify-content: space-between;
+}
+
+.main .header img {
+  width: 35px;
+}
+
+.main .header ul {
+  display: flex;
+}
+
+.main .header li {
+  list-style: none;
+  padding-left: 25px;
+  font-style: italic;
+}
+
+.main .header li a {
+  color: #fff;
+}
+
+.main .text-mountain {
+  position: absolute;
+  top: 100px;
+  width: 40%;
+  left: 30%;
+  z-index: 1;
+}
+
+.main .mountain-left {
+  position: absolute;
+  left: 0;
+  width: 53%;
+  bottom: 0;
+  z-index: 2;
+}
+
+.main .mountain-right {
+  position: absolute;
+  right: 0;
+  width: 53%;
+  bottom: 0;
+  z-index: 3;
+}
+
+@media screen and (max-width: 450px) {
+  .main .header {
+    left: 10%;
+    width: 80%;
+  }
+}
+
+/* Divider */
+
+.middle .divider {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.middle .divider img {
+  width: 83.46px;
+}
+
+.middle .divider ul {
+  display: flex;
+}
+
+.middle .divider li {
+  list-style: none;
+  padding-left: 25px;
+  font-style: italic;
+}
+
+.middle .divider a {
+  color: #464b57;
+}
+
+@media only screen and (max-width: 450px) {
+  .middle .divider {
+    width: 95%;
+  }
+  .middle .divider li {
+    padding-left: 10px;
+  }
+}
+
+/* History *********************/
+.history {
+  width: 100%;
+  position: relative;
+  height: 100vh;
+  background-image: url("img/background2.png");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.history .text {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+}
+
+.text p {
+  font-family: sans-serif;
+  font-size: 100px;
+  color: #707070;
+}
+
+.history .heading p {
+  position: absolute;
+  color: #41516b;
+  margin: 11% 24%;
+  font-size: 50px;
+}
+
+.history .lorem {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+}
+
+.history .filter {
+  position: absolute;
+  background-color: rgba(57, 69, 93, 0.7);
+  width: 100%;
+  bottom: 0px;
+}
+
+.history .filter .hiking {
+  display: flex;
+  margin: 15px auto;
+  width: 70%;
+  margin-bottom: 5px;
+}
+
+.history .filter .hiking img {
+  padding: 0 1%;
+  width: 24%;
+}
+
+.history .filter .dots {
+  margin: 15px auto;
+  margin-top: 7px;
+  width: fit-content;
+}
+
+.history .filter .dots img {
+  width: 7px;
+}
+
+.history .dots p {
+  font-size: 30px;
+  color: #fff;
+}
+
+.history .dots span {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 450px) {
+  .history .filter .hiking {
+    width: 90%;
+  }
+  .history .filter .hiking img {
+    padding: 0 0.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .history .text {
+    left: 10%;
+    font: 120px sans-serif;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .history .heading p {
+    margin: 43% 28%;
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .history .lorem {
+    margin: 8% 1%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text p {
+    margin: 176% 19%;
+    font-size: 50px;
+  }
+}
+
+/* climb *****/
+.text-climb {
+  width: 100%;
+  display: flex;
+}
+
+.text-climb .two {
+  width: 20%;
+}
+.text-climb .two p {
+  font-family: sans-serif;
+  font-size: 100px;
+  color: #707070;
+  margin: 35% 24%;
+}
+
+.text-climb .heading-climb {
+  width: 20%;
+}
+
+.text-climb .heading-climb p {
+  color: #41516b;
+  margin: 45% -25%;
+  font-size: 50px;
+}
+
+.text-climb .imsum {
+  width: 50%;
+}
+
+.text-climb .imsum p {
+  margin: 13% -15%;
+}
+
+@media screen and (max-width: 450px) {
+  .text-climb .two p {
+    font-size: 50px;
+    margin: 50% 50%;
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-climb .heading-climb p {
+    margin: 77% 31%;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text-climb .imsum {
+    margin: 13% -25%;
+    width: 74%;
+  }
+}
+
+/* navbar *****/
+.navbar {
+  position: relative;
+  background-color: #414f6a;
+  width: 100%;
+}
+
+.navbar .link1 {
+  margin-left: 20%;
+  display: flex;
+}
+
+.navbar .link1 a {
+  color: #424e67;
+  background-color: #b0b4bf;
+  padding: 17px;
+}
+
+.navbar .link1 a.two-mountain {
+  background-color: #414f6a;
+  color: #b0b4bf;
+}
+
+/* schedule **************/
+.schedule {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-image: url("img/background3.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.schedule .table {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  border-spacing: 2px;
+  border-color: grey;
+  background-color: #ffffff5e;
+}
+
+.schedule .table th {
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.schedule .table td {
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+@media screen and (max-width: 450px) {
+  .schedule .table {
+    margin: 0 -9%;
+  }
+}
+
+/******** Footer *******/
+
+.footer {
+  width: 100%;
+  background-color: #414f6a;
+  padding: 10px 0;
+}
+
+.footer .footer-nav {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-nav img {
+  width: 120px;
+}
+
+.footer-nav p {
+  color: #617193;
+  font-size: 12px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 450px) {
+  .footer-nav p {
+    margin: 0 13%;
+    width: 58%;
+  }
+}
